@@ -1,12 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icons/file-document.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Builder</title>
+    <title>Copy CV Builder</title>
   </head>
   <body>
     <div id="root"></div>
+    <main>
+      <div class="sidebar">
+        <div class="img-container">
+
+        </div>
+
+        <!-- about Me -->
+        <div class="section flex column small-gap">
+          <div class="section-header flex center-align small-gap">
+            <img src="/icons/account-tie.svg" alt="" class="icon-medium invert" />
+            <h2 class="white">About Me</h2>
+          </div>
+          <div class="section-content">
+            <p class="white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac
+              erat mauris.
+            </p>
+          </div>
+        </div>
+    
+        <!-- contact -->
+        <div class="section  flex column small-gap">
+          <div class="section-header flex center-align small-gap">
+            <img src="./public/icons/contacts.svg" alt="" class="icon-medium invert" />
+            <h2 class="white">Contacts</h2>
+          </div>
+          <div class="section-content grid center-align tiny-gap">
+                <img src="./public/icons/phone.svg" alt="" class="icon-small invert">
+                <p class="white">+123-156-7890</p>
+                <img src="./public/icons/email.svg" alt="" class="icon-small invert">
+                <p class="white">not.real@gmail.com</p>
+                <img src="./public/icons/map-marker.svg" alt="" class="icon-small invert">
+                <p class="white">123 Srteet, Raod Ctiy</p>
+            
+          </div>
+        </div>
+    
+        <!-- skills -->
+        <div class="section  flex column small-gap">
+          <div class="section-header flex center-align small-gap">
+            <img src="./public/icons/cog.svg" alt="" class="icon-medium invert" />
+            <h2 class="white">Skills</h2>
+          </div>
+          <div class="section-content grid center-align">
+                <img src="./public/icons/circle-small.svg" alt="" class="icon-small invert">
+                <p class="white">Web Design</p>
+                <img src="./public/icons/circle-small.svg" alt="" class="icon-small invert">
+                <p class="white">Branding</p>
+                <img src="./public/icons/circle-small.svg" alt="" class="icon-small invert">
+                <p class="white">SEO</p>
+                <img src="./public/icons/circle-small.svg" alt="" class="icon-small invert">
+                <p class="white">Marketing</p>
+                <img src="./public/icons/circle-small.svg" alt="" class="icon-small invert">
+                <p class="white">Graphic Design</p>
+          </div>
+        </div>
+    
+        <!-- language -->
+        <div class="section  flex column small-gap">
+          <div class="section-header flex center-align small-gap">
+            <img src="./public/icons/translate.svg" alt="" class="icon-medium invert" />
+            <h2 class="white">Language  </h2>
+          </div>
+          <div class="section-content grid center-align">
+                <img src="./public/icons/circle-small.svg" alt="" class="icon-small invert">
+                <p class="white">English</p>
+                <img src="./public/icons/circle-small.svg" alt="" class="icon-small invert">
+                <p class="white">French</p>
+          </div>
+        </div>        
+      </div>
+
+      <div class="focal">
+        <div class="header">
+          <h1>Aeron C. Tayaotao</h1>
+          <p class="large-text">Aspiring Programmer</p>
+        </div>
+        
+        
+      </div>
+    </main>
+
+    
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
