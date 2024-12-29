@@ -1,0 +1,78 @@
+/* flex properties */
+.flex{
+    display: flex;
+}
+.center-align{
+    align-items: center;
+}
+
+.column{
+    flex-direction: column;
+}
+
+/* gaps */
+.tiny-gap{
+    gap: 0.5rem;
+}
+.small-gap{
+    gap: 1rem;
+}
+
+.medium-gap{
+    gap:2rem;
+}
+
+.large-gap{
+    gap:3rem;
+}
+
+/* icon-sizes */
+.icon-small{
+    max-width: 2rem;
+}
+
+.icon-medium{
+    max-width: 3rem;
+}
+
+.icon-large{
+    max-width: 4rem;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+
+/* colour */
+.white{
+    color: white;
+}
+.b-black{
+    background-color: rgb(77, 76, 76);
+}
+
+/* grid */
+.grid{
+    display: grid;
+}
+.section-content{
+    grid-template-columns: 3rem 1fr;
+}
+
+img{
+    align-self: center;
+    justify-self: center;
+}
+
+/* text size */
+.large-text{
+    font-size: 1.5rem;
+}
+
+.medium-text{
+    font-size: 1.3rem;
+}
+.small-text{
+    font-size: 1.1rem;
+}
