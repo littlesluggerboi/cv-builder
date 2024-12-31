@@ -1,78 +1,128 @@
 /* flex properties */
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
-.center-align{
-    align-items: center;
+.center-align {
+  align-items: center;
 }
 
-.column{
-    flex-direction: column;
+.column {
+  flex-direction: column;
+}
+
+/* margn */
+.left {
+  margin-left: auto;
+}
+.top {
+  margin-top: auto;
+}
+.bottom {
+  margin-bottom: auto;
+}
+.right {
+  margin-right: auto;
 }
 
 /* gaps */
-.tiny-gap{
-    gap: 0.5rem;
+.tiny-gap {
+  gap: 0.5rem;
 }
-.small-gap{
-    gap: 1rem;
-}
-
-.medium-gap{
-    gap:2rem;
+.small-gap {
+  gap: 1rem;
 }
 
-.large-gap{
-    gap:3rem;
+.medium-gap {
+  gap: 2rem;
+}
+
+.large-gap {
+  gap: 3rem;
 }
 
 /* icon-sizes */
-.icon-small{
-    max-width: 2rem;
+.icon-small {
+  max-width: 2rem;
 }
 
-.icon-medium{
-    max-width: 3rem;
+.icon-medium {
+  max-width: 3rem;
 }
 
-.icon-large{
-    max-width: 4rem;
+.icon-large {
+  max-width: 4rem;
 }
 
-.invert{
-    filter: invert(1);
+.invert {
+  filter: invert(1);
 }
-
 
 /* colour */
-.white{
-    color: white;
+.white {
+  color: white;
 }
-.b-black{
-    background-color: rgb(77, 76, 76);
+.b-black {
+  background-color: rgb(46, 46, 46);
 }
 
 /* grid */
-.grid{
-    display: grid;
+.grid {
+  display: grid;
 }
-.section-content{
-    grid-template-columns: 3rem 1fr;
+.section-content {
+  grid-template-columns: 3rem 1fr;
+}
+.skill{
+    grid-template-columns: 3rem 1fr 1.5rem;
 }
 
-img{
-    align-self: center;
-    justify-self: center;
+img {
+  align-self: center;
+  justify-self: center;
 }
 
 /* text size */
-.large-text{
-    font-size: 1.5rem;
+.big-text {
+  font-size: 2rem;
 }
 
-.medium-text{
-    font-size: 1.3rem;
+.large-text {
+  font-size: 1.5rem;
 }
-.small-text{
-    font-size: 1.1rem;
+
+.medium-text {
+  font-size: 1.3rem;
+}
+.small-text {
+  font-size: 1.1rem;
+}
+
+/* font-weight */
+.bold {
+  font-weight: bold;
+}
+
+/* position */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.p-top {
+  top: 0;
+}
+
+.p-left {
+  left: 0;
+}
+
+.p-right {
+  right: 0;
+}
+
+.p-bottom {
+  bottom: 0;
 }
