@@ -18,6 +18,7 @@ body{
 
 
 main{
+    min-width: 320px;
     margin: 0 auto;
     max-width: 1200px;
     display: grid;
@@ -45,9 +46,10 @@ main{
     padding: 1rem 2rem;
 }
 
+
 input, textarea{
-    min-width:100%;
-    display: block;
+    display: flex;
+    width: 100%;
     appearance: none;
     border: none;
     font: inherit;
@@ -66,7 +68,7 @@ input, textarea{
 
 @media (max-width:425px) {
     .sidebar{
-        min-width: fit-content;
+        max-width: 100%;
     }
     main{
         grid-template-columns: auto;
@@ -74,8 +76,18 @@ input, textarea{
     .focal{
         padding: 1rem;
     }
+    
 }
 
 .delete {
     min-height: 1.5rem;
+    max-height: 2rem;
+}
+
+.two-cols{
+    grid-template-columns: auto 2rem;
+}
+.add{
+    padding: 0.25rem 0.5rem;
+    margin: auto;
 }

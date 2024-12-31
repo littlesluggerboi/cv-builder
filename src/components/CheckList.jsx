@@ -6,7 +6,9 @@ export default function CheckList({
   onDelete,
   onAdd,
   deleteButtonStyle,
-  invert
+  invert,
+  addButtonStyle,
+  addValue = "add"
 }) {
   return (
     <>
@@ -23,7 +25,7 @@ export default function CheckList({
           />
         );
       })}
-      <button className={deleteButtonStyle} onClick={onAdd}>Add</button>
+      <button className={addButtonStyle} onClick={onAdd}>{addValue}</button>
     </>
   );
 }

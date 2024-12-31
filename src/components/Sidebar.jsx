@@ -115,6 +115,7 @@ export default function SideBar() {
               onAdd={addSkill}
               deleteButtonStyle={"delete b-black white"}
               invert={true}
+              addButtonStyle={"delete b-black white"}
             />
           }
           sectionContentStyle="flex small-gap column"
@@ -133,6 +134,7 @@ export default function SideBar() {
               onAdd={addLanguage}
               deleteButtonStyle={"delete b-black white"}
               invert={true}
+              addButtonStyle={"delete b-black white"}
             />
           }
           sectionContentStyle="flex small-gap column"
