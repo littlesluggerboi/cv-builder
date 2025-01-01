@@ -21,6 +21,7 @@ body {
 }
 
 main {
+  padding: 1rem 0;
   min-width: 320px;
   margin: 0 auto;
   max-width: 1200px;
@@ -98,6 +99,7 @@ button.add > img {
 
 .focal {
   padding: 5rem 1rem 1rem 1rem;
+  border: 1px solid gray;
 }
 
 .header > textarea:first-of-type {
