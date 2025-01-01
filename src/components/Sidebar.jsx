@@ -7,12 +7,13 @@ import languageImg from "../assets/icons/translate.svg";
 import phoneImg from "../assets/icons/phone.svg";
 import emailImg from "../assets/icons/email.svg";
 import addressImg from "../assets/icons/map-marker.svg";
+import profileImg from "../assets/icons/face-man-profile.svg";
 import ImgWithText from "../Texts/ImgWithText";
 import stateGenerator from "../utility/stateGenerator";
 import CheckList from "./CheckList";
 import CollectionManager from "../utility/collectionManager";
 
-let nextId = 0;
+let nextId = 6;
 
 export default function SideBar() {
   const [about, setAbout] = stateGenerator();
@@ -31,7 +32,12 @@ export default function SideBar() {
     placeholder: "Add an address",
     value: "",
   });
-  const [skills, setSkills] = stateGenerator([]);
+  const [skills, setSkills] = stateGenerator([
+    { id: 0, placeholder: "Add a skill", value: "" },
+    { id: 2, placeholder: "Add a skill", value: "" },
+    { id: 4, placeholder: "Add a skill", value: "" },
+    { id: 5, placeholder: "Add a skill", value: "" },
+  ]);
   const [changeSkill, deleteSkill] = CollectionManager(skills, setSkills);
 
   function addSkill() {
@@ -43,7 +49,18 @@ export default function SideBar() {
     setSkills([...skills, skill]);
   }
 
-  const [languages, setLanguages] = stateGenerator([]);
+  const [languages, setLanguages] = stateGenerator([
+    {
+      id: 1,
+      placeholder: "Add a language",
+      value: "",
+    },
+    {
+      id: 3,
+      placeholder: "Add a language",
+      value: "",
+    },
+  ]);
   const [changeLanguage, deleteLanguage] = CollectionManager(
     languages,
     setLanguages
