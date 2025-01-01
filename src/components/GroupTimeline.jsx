@@ -2,7 +2,7 @@ import CollectionManager from "../utility/collectionManager";
 import stateGenerator from "../utility/stateGenerator";
 import ItemContainer from "./ItemContainer";
 import TimeLine from "./Timeline";
-import addImg from "../../public/icons/plus.svg"
+import addImg from "../assets/icons/plus.svg"
 let nextId = 0;
 export default function GroupTimeLine({
   h2placeholder,

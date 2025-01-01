@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import delImg from "../../public/icons/delete-outline.svg";
+import delImg from "../assets/icons/delete-outline.svg";
 export default function ({ component, deleteCallback, deleteArgs }) {
   function deleteFunction() {
     deleteCallback(deleteArgs);

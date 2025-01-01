@@ -1,8 +1,8 @@
 import Text from "../Texts/Text";
 import stateGenerator from "../utility/stateGenerator";
 import Section from "./Section";
-import expImg from "../../public/icons/briefcase-account-outline.svg";
-import educationImg from "../../public/icons/school.svg";
+import expImg from "../assets/icons/briefcase-account-outline.svg";
+import educationImg from "../assets/icons/school.svg";
 import GroupTimeLine from "./GroupTimeline";
 export default function Focal() {
   const [name, setName] = stateGenerator();

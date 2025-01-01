@@ -1,4 +1,4 @@
-import defaultImg from "../../public/icons/circle-small.svg";
+import defaultImg from "../assets/icons/circle-small.svg";
 import Text from "./Text";
 export default function ImgWithText({ item, callback }) {
   function onChange(value) {

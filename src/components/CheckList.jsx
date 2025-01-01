@@ -1,6 +1,6 @@
 import ItemContainer from "./ItemContainer";
 import ImgWithText from "../Texts/ImgWithText";
-import addImg from "../../public/icons/plus.svg"
+import addImg from "../assets/icons/plus.svg"
 export default function CheckList({ items, onChange, onDelete, onAdd }) {
   return (
     <>
