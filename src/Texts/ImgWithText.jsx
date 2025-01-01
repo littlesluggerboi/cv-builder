@@ -5,20 +5,20 @@ export default function ImgWithText({ item, callback }) {
     const newItem = { ...item, value: value };
     callback(newItem);
   }
-
   return (
     <>
-      <img
-        src={item.imgSrc ? item.imgSrc : defaultImg}
-        alt=""
-        className={item.invert ? "icon-small invert" : "icon-small"}
-      />
-      <Text
-        placeholder={item.placeholder}
-        styleClass={item.styleClass}
-        value={item.value}
-        callback={onChange}
-      />
+      <div className="img-with-text">
+        <img
+          src={item.imgSrc ? item.imgSrc : defaultImg}
+          alt=""
+        />
+        <Text
+          placeholder={item.placeholder}
+          styleClass={item.styleClass}
+          value={item.value}
+          callback={onChange}
+        />
+      </div>
     </>
   );
 }

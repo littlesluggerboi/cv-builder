@@ -1,4 +1,4 @@
-export default function Text({ placeholder, styleClass, value, callback }) {
+export default function Text({ placeholder, value, callback }) {
   function autoResize(e) {
     const element = e.target;
     element.style.height = "auto";
@@ -14,7 +14,6 @@ export default function Text({ placeholder, styleClass, value, callback }) {
       <textarea
         rows={1}
         type="text"
-        className={styleClass}
         placeholder={placeholder}
         onInput={autoResize}
         spellCheck={false}

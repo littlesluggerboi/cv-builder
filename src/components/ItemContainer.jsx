@@ -1,30 +1,27 @@
+
+import { useState } from "react";
 import delImg from "../../public/icons/delete-outline.svg";
-export default function ({
-  component,
-  deleteButtonStyle = "flex center-align",
-  itemContainerStyle,
-  invert = true,
-  deleteCallback,
-  deleteArgs,
-}) {
+export default function ({ component, deleteCallback, deleteArgs }) {
   function deleteFunction() {
     deleteCallback(deleteArgs);
+  }
+  const [focus, setFocus] = useState(false);
+
+  function onfocus(){
+    setFocus(true);
+  }
+
+  function onblur(){
+    setFocus(false);
   }
 
   return (
     <>
-      <div className={"".concat(itemContainerStyle)}>
+      <div className="item-container" onMouseEnter={onfocus} onMouseLeave={onblur}>
         {component}
-        <button
-          className={
-            deleteButtonStyle !== "flex center-align"
-              ? "flex center-align ".concat(deleteButtonStyle)
-              : deleteButtonStyle
-          }
-          onClick={deleteFunction}
-        >
-          <img className={invert ? "invert" : ""} src={delImg} alt="" />
-        </button>
+        {focus && <button className="delete" onClick={deleteFunction}>
+          <img src={delImg} alt="Delete Icon" />
+        </button>}
       </div>
     </>
   );

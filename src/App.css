@@ -1,128 +1,60 @@
-/* flex properties */
-.flex {
-  display: flex;
-}
-.center-align {
-  align-items: center;
-}
-
-.column {
-  flex-direction: column;
-}
-
-/* margn */
-.left {
-  margin-left: auto;
-}
-.top {
-  margin-top: auto;
-}
-.bottom {
-  margin-bottom: auto;
-}
-.right {
-  margin-right: auto;
-}
-
-/* gaps */
-.tiny-gap {
-  gap: 0.5rem;
-}
-.small-gap {
-  gap: 1rem;
-}
-
-.medium-gap {
-  gap: 2rem;
-}
-
-.large-gap {
-  gap: 3rem;
-}
-
-/* icon-sizes */
-.icon-small {
-  max-width: 2rem;
-}
-
-.icon-medium {
-  max-width: 3rem;
-}
-
-.icon-large {
-  max-width: 4rem;
-}
-
-.invert {
-  filter: invert(1);
-}
-
-/* colour */
-.white {
-  color: white;
-}
-.b-black {
-  background-color: rgb(46, 46, 46);
-}
-
-/* grid */
-.grid {
-  display: grid;
-}
-.section-content {
-  grid-template-columns: 3rem 1fr;
-}
-.skill{
-    grid-template-columns: 3rem 1fr 1.5rem;
-}
-
 img {
   align-self: center;
   justify-self: center;
+  max-width: 2rem;
 }
 
-/* text size */
-.big-text {
-  font-size: 2rem;
+.sidebar textarea, .sidebar h2{
+  color: white;
+  background-color: rgb(46, 46, 46);
 }
 
-.large-text {
-  font-size: 1.5rem;
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 2rem;
 }
 
-.medium-text {
-  font-size: 1.3rem;
-}
-.small-text {
-  font-size: 1.1rem;
-}
-
-/* font-weight */
-.bold {
-  font-weight: bold;
+.section-header{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-/* position */
-.relative {
-  position: relative;
+
+.sidebar img{
+  filter: invert(1);
 }
 
-.absolute {
-  position: absolute;
+.section-header > img{
+  max-width: 3rem;
 }
 
-.p-top {
-  top: 0;
+.img-with-text{
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  width: 100%;
 }
 
-.p-left {
-  left: 0;
+.section{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.p-right {
-  right: 0;
+.section-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.p-bottom {
-  bottom: 0;
+.focal .section-content > button.add{
+  border: none;
+  height: 3rem;
+  max-width: 10rem;
+  margin: auto;
+  box-shadow: 0 0 2px 0 gray;
+  font-weight: 900;
+  font: inherit;
 }

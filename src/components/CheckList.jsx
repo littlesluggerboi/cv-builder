@@ -1,15 +1,7 @@
 import ItemContainer from "./ItemContainer";
 import ImgWithText from "../Texts/ImgWithText";
-export default function CheckList({
-  items,
-  onChange,
-  onDelete,
-  onAdd,
-  deleteButtonStyle,
-  invert,
-  addButtonStyle,
-  addValue = "add"
-}) {
+import addImg from "../../public/icons/plus.svg"
+export default function CheckList({ items, onChange, onDelete, onAdd }) {
   return (
     <>
       {items.map((item) => {
@@ -17,15 +9,14 @@ export default function CheckList({
           <ItemContainer
             key={item.id}
             component={<ImgWithText item={item} callback={onChange} />}
-            itemContainerStyle={"grid skill center-align tiny-gap"}
-            deleteButtonStyle={deleteButtonStyle}
             deleteCallback={onDelete}
             deleteArgs={item.id}
-            invert={invert}
           />
         );
       })}
-      <button className={addButtonStyle} onClick={onAdd}>{addValue}</button>
+      <button className="add" onClick={onAdd}>
+        <img src={addImg} alt="" />
+      </button>
     </>
   );
 }

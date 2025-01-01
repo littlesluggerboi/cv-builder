@@ -14,13 +14,11 @@ export default function Focal() {
         <div className="header">
           <Text
             placeholder={"Full Name"}
-            styleClass={"big-text bold"}
             value={name}
             callback={setName}
           />
           <Text
             placeholder={"Job Title"}
-            styleClass={"small-text"}
             value={jobTitle}
             callback={setJobTitle}
           />
@@ -31,7 +29,6 @@ export default function Focal() {
         <Section
           srcImg={expImg}
           sectionTitle={"Experience"}
-          sectionContentStyle="flex small-gap column"
           sectionContent={
             <GroupTimeLine
               h2placeholder={"(2021-2023)"}
